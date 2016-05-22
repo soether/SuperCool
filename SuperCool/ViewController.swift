@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var CoolLogo: UIImageView!
+    @IBOutlet weak var coolBg: UIImageView!
+    @IBOutlet weak var UncoolButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,10 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func makemeNotSoUncool(sender: AnyObject) {
+        CoolLogo.hidden = false
+        coolBg.hidden = false
+        UncoolButton.hidden = true
+    }
 }
 
